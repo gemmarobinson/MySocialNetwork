@@ -9,12 +9,11 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="container">
+		<section class="top-banner">
+			<header>
 				<div class="row">
-					<div class="col-4"><h1>Hello</h1></div>
-					<div class="col-4"><p>Hello</p></div>
-					<div class="col-4"><h1>Hello</h1></div>
+					<div class="col-6">My Social Network</div>
+					<div class="col-6 text-right">Menu</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</section>
