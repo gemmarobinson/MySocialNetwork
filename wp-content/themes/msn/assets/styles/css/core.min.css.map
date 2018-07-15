@@ -1,0 +1,1 @@
+{"version":3,"mappings":"AAAA,IAAK,CACJ,UAAU,CAAE,GAAG,CACf,KAAK,CAAE,KAAK,CAEZ,WAAO,CACN,MAAM,CAAE,IAAI","sources":["core.scss"],"names":[],"file":"core.min.css","sourcesContent":["body {\n\tbackground: red;\n\tcolor: white;\n\n\theader {\n\t\theight: 100%;\n\t}\n}"]}

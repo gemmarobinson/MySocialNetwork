@@ -1,0 +1,36 @@
+{
+  "name": "msn.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gu": "^0.6.2",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-rev": "^8.1.1",
+    "gulp-rm": "^1.0.5",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemmarobinson/MySocialNetwork.git"
+  },
+  "author": "Gemma Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gemmarobinson/MySocialNetwork/issues"
+  },
+  "homepage": "https://github.com/gemmarobinson/MySocialNetwork#readme"
+}
