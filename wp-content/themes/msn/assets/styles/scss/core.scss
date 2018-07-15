@@ -23,6 +23,17 @@
 
 
 /*-------------------------------------------------
-	| BOOTSTRAP IMPORT
+	| COMPONENTS
 --------------------------------------------------*/
 	
+	@import "components/header";
+	@import "components/footer";
+	@import "components/global";
+	
+
+
+/*-------------------------------------------------
+	| PAGES
+--------------------------------------------------*/
+
+	@import "pages/homepage";
