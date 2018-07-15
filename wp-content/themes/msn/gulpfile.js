@@ -5,7 +5,6 @@
 	var gulp = require('gulp');
 	var rename = require('gulp-rename');
 	var sass = require('gulp-ruby-sass');
-	var sourcemap = require('gulp-sourcemaps');
 	var concat = require('gulp-concat');
 	var uglify = require('gulp-uglify');
 
@@ -18,13 +17,10 @@
 	gulp.task('styles', function() {
 
 		gulp.src( 'assets/styles/scss/*.scss')
-			.pipe( sourcemap.init() )
 			return sass(['assets/styles/scss/*.scss'], {
 				style: 'compressed',
-				sourcemap: true
 			})
 			.pipe(rename('core.min.css'))
-			.pipe( sourcemap.write('./') )
 		.pipe(gulp.dest('assets/styles/css'))
 
 	});

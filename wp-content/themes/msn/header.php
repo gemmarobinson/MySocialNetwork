@@ -16,4 +16,9 @@
 					<div class="col-6 text-right">Menu</div>
 				</div>
 			</header>
+
+			<div class="top-banner--content">
+				<h1 class="text-center">We are more than strategists.</h1>
+				<hr />
+			</div>
 		</section>
