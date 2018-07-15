@@ -1,0 +1,79 @@
+/*-------------------------------------------------
+	| BASIC GLOBAL STYLING
+--------------------------------------------------*/
+
+	html,body {
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+	*, *:before, *:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+
+
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+
+
+
+	// Headings
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: $Montserrat;
+		font-weight: $Montserrat-Bold;
+		color: $heading-colour;
+		line-height: $heading-line-height;
+	}
+
+	h1, .h1 { font-size: $h1-font-size; }
+	h2, .h2 { font-size: $h2-font-size; }
+	h3, .h3 { font-size: $h3-font-size; }
+
+
+
+	// Paragraph
+	p, .paragraph {
+		font-family: $Montserrat;
+		font-size: $paragraph-size;
+		line-height: $paragraph-line-height;
+		color: $paragraph-colour;
+		
+		&.light 	{ font-weight: $Montserrat-Light; }
+		&.regular 	{ font-weight: $Montserrat-Regular; }
+
+		&--small { font-size: $small-paragraph-size; }
+	}
+
+
+
+	// Lists
+	ol, ul {
+		li {
+			font-size: $paragraph-size;
+			line-height: $paragraph-line-height;
+			font-family: $paragraph-font-family;
+		}
+	}
+
+
+
+	// Font Styles
+	em, i { font-style: italic; }
+	strong, b { font-weight: $Montserrat-Bold; }
+
+	.font-weight {
+		&--bolden { font-weight: $Montserrat-Bold; }
+		&--normal { font-weight: $Montserrat-Regular; }
+		&--italic { font-style: italic; }
+	}
+
+
+

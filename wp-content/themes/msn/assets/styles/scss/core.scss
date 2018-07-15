@@ -1,8 +1,28 @@
-body {
-	background: red;
-	color: white;
 
-	header {
-		height: 100%;
-	}
-}
+/*-------------------------------------------------
+	| INCLUDES
+--------------------------------------------------*/
+	// Bootstrap
+	@import "includes/bootstrap/bootstrap-grid";
+
+	// Fonts
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+
+
+
+/*-------------------------------------------------
+	| UTILITIES
+--------------------------------------------------*/
+
+	@import "utilities/wp-core";
+	@import "utilities/variables";
+	@import "utilities/basic";
+	@import "utilities/helpers";
+
+
+
+/*-------------------------------------------------
+	| BOOTSTRAP IMPORT
+--------------------------------------------------*/
+	
