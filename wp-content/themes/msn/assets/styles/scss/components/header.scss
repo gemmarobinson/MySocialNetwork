@@ -1,5 +1,21 @@
 .top-banner {
-	padding: 90px 130px;
+	padding: 45px 70px;
 	background: url('../../images/top-banner-bg.png');
 	height: 100vh;
+
+	&--content {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+
+		h1 {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		hr {
+			border-top: 10px solid $main-colour-pink;
+			width: 350px;
+		}
+	}
 }
