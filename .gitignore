@@ -1,0 +1,21 @@
+## Development Environment
+.DS_Store
+.sass-cache
+node_modules
+
+## Sensitive Files
+.wp-config.php
+
+## WordPress Exclude files
+/license.txt
+/readme.html
+/wp-content/uploads
+
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
