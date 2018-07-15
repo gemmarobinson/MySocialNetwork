@@ -4,7 +4,7 @@
 node_modules
 
 ## Sensitive Files
-.wp-config.php
+wp-config.php
 
 ## WordPress Exclude files
 /license.txt
