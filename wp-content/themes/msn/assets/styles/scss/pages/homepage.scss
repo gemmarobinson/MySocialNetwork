@@ -1,0 +1,73 @@
+.intro {
+	padding: 150px 12%;
+
+	h2 {
+		padding:40px 0 90px 0;
+	}
+
+	p {
+		max-width: 340px;
+	}
+
+	img {
+		width: 450px;
+	}
+}
+
+
+.single-service {
+	height: 300px;
+	postion: relative;
+
+	&--content {
+		max-width: 180px;
+		position: absolute;
+		bottom: 30%;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+
+		p { 
+			color: white;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		hr {
+			border-top: 5px solid white;
+			margin: 0;
+		}
+	}
+
+	&:nth-child(1) { background-color: $pink; 	}
+ 	&:nth-child(2) { background-color: $purple; }
+ 	&:nth-child(3) { background-color: $mint; 	}
+ 	&:nth-child(4) { background-color: $mint; 	}
+ 	&:nth-child(5) { background-color: $pink; 	}
+ 	&:nth-child(6) { background-color: $purple; }
+}
+
+
+
+.clients {
+	padding: 150px 12%;
+
+	.single-clients {
+		padding: 50px 0;
+		text-align: center;
+
+		img {
+			max-width: 50%;
+			max-height: 100px;
+			position: relative;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+	}
+}
+
+
+
+.contact {
+	padding: 75px 12%;
+	background-color: $mint;
+}

@@ -1,11 +1,12 @@
 .top-banner {
 	padding: 45px 70px;
-	background: url('../../images/top-banner-bg.png');
+	background-image: url('../../images/top-banner-bg.png');
 	height: 100vh;
 
 	header {
 		img {
 			width: 40px;
+			padding-top: 7px;
 		}
 	}
 
@@ -17,13 +18,24 @@
 	    left: 0;
 
 		h1 {
-			max-width: 500px;
 			margin: 0 auto;
 		}
 
 		hr {
-			border-top: 10px solid $main-colour-pink;
+			border-top: 10px solid $pink;
 			width: 200px;
 		}
 	}
+}
+
+
+
+.scroll-down {
+	cursor: pointer;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 30px;
 }

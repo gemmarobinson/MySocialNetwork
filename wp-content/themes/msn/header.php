@@ -12,7 +12,9 @@
 		<section class="top-banner background-block">
 			<header>
 				<div class="row">
-					<div class="col-6">My Social Network</div>
+					<div class="col-6">
+						<p class="h4 uppercase">My Social</br>Network.</p>
+					</div>
 					<div class="col-6 text-right">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.png" alt="Menu Icon" />
 					</div>
@@ -20,7 +22,9 @@
 			</header>
 
 			<div class="top-banner--content">
-				<h1 class="text-center">We are more than strategists.</h1>
+				<h1 class="h2 text-center">We are more</br>than strategists.</h1>
 				<hr />
 			</div>
+
+			<img class="scroll-down" src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Scrolling Arrow" />
 		</section>

@@ -113,4 +113,14 @@
 			return $src;
 
 		}
+
+
+
+	/*-----------------------------------------------------------------------------
+		| Security Measures
+	-----------------------------------------------------------------------------*/
+
+		@include ('includes/custom-post-types/services.php');
+		@include ('includes/custom-post-types/clients.php');
+
 ?>
