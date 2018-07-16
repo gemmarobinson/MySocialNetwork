@@ -91,8 +91,7 @@
 				<h2 class="purple">Get in touch.</h2>
 			</div>
 			<div class="col-6">
-				<p class="double-padding">Hello!</p>
-				<p>My name is</p>
+				<?php echo do_shortcode( '[contact-form-7 id="31" title="Get in touch."]' ); ?>
 			</div>
 			<div class="col-6">
 			</div>
