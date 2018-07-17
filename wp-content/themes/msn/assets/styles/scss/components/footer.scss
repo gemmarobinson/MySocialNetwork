@@ -1,7 +1,9 @@
 footer {
-	padding: 75px 12%;
+	padding: 75px 12% 10px 12%;
 	background-image: url('../../images/footer-background.png');
 	position: relative;
+
+
 
 	.background-image {
 		height: 40%;
@@ -9,6 +11,8 @@ footer {
 		left: 8%;
 		top: 30%;
 	}
+
+
 
 	li {
 		color: white;
@@ -20,8 +24,28 @@ footer {
 		}
 	}
 
+
+
 	.social-icon {
-		width: 40px;
-		padding-left: 10px;
+		width: 30px;
+		margin-left: 10px;
+
+		@include media-breakpoint-down(md) {
+			margin: 0;
+		}
+	}
+
+
+
+	.copyright-info {
+		li {
+			padding: 0 10px;
+			border-right: 1px solid white;
+			font-size: $small-paragraph-size;
+
+			&:last-child {
+				border: 0;
+			}
+		}
 	}
 }
