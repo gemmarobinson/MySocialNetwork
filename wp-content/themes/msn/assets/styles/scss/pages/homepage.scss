@@ -95,6 +95,7 @@
 			outline: 0;
 			color: white;
 			font-family: $Montserrat;
+			font-size: $paragraph-size;
 
 			&-webkit-autofill {
 				background-color: transparent !important;
@@ -109,9 +110,22 @@
 			padding: 5px;
 		}
 
-		input {
+		input[type="text"], input[type="email"] {
 			border-bottom: 1px solid white;
 			margin-bottom: 15px;
+			height: 16px;
+
+			&.tel-input { 
+				width: calc(100% - 80px);
+
+				@include media-breakpoint-down(lg) { width: 100%; }
+			}
+
+			&.email-input { 
+				width: calc(100% - 170px); 
+
+				@include media-breakpoint-down(lg) { width: 100%; }
+			}
 		}
 
 		input[type="submit"] {
