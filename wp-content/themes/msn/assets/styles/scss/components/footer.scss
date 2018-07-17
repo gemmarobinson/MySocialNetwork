@@ -1,0 +1,27 @@
+footer {
+	padding: 75px 12%;
+	background-image: url('../../images/footer-background.png');
+	position: relative;
+
+	.background-image {
+		height: 40%;
+		position: absolute;
+		left: 8%;
+		top: 30%;
+	}
+
+	li {
+		color: white;
+		padding-right: 10%;
+		font-weight: $Montserrat-Light;
+
+		@include media-breakpoint-down(lg) {
+			padding-right: 15px;
+		}
+	}
+
+	.social-icon {
+		width: 40px;
+		padding-left: 10px;
+	}
+}
