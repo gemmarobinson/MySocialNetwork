@@ -21,14 +21,9 @@
 
 
 
-// Inline Items
-.d-inline {
-	display: inline-block;
-	margin-left: -4px;
-
-	&:first-child {
-		margin-left: 0;
-	}
+// Inline Items (extra to bootstrap class)
+.d-inline-block {
+	vertical-align: top;
 }
 
 

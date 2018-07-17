@@ -70,8 +70,71 @@
 .contact {
 	padding: 75px 12%;
 	background-color: $mint;
+	background-image: url('../../images/waves.png');
+	background-size: 15%;
+	background-position: 100% 90%;
+	background-repeat: no-repeat;
+
 
 	p {
 		color: white;
+	}
+
+
+	.wpcf7-form {
+		padding-right: 26%;
+
+		.d-inline-block {
+			vertical-align: middle;
+		}
+
+		input, textarea {
+			background-color: transparent;
+			border: 0;
+			-webkit-appearance: none;
+			outline: 0;
+			color: white;
+			font-family: $Montserrat;
+
+			&-webkit-autofill {
+				background-color: transparent !important;
+			}
+		}
+
+		textarea {
+			resize: none;
+			border: 1px solid white;
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 5px;
+		}
+
+		input {
+			border-bottom: 1px solid white;
+			margin-bottom: 15px;
+		}
+
+		input[type="submit"] {
+			-webkit-appearance: none;
+			width: 100%;
+			background-color: $purple;
+			color: white;
+			border: 0;
+			text-align: center;
+			padding: 10px 0;
+			margin: 0;
+
+		}
+	}
+
+
+	.contact-information {
+		img {
+			max-height: 25px;
+		}
+
+		p {
+			padding-left: 20px;
+		}
 	}
 }
