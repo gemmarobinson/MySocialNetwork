@@ -59,6 +59,10 @@ $(document).ready(function(){
 
 $(".js-service").click(function(){
   
-$(this).addClass("active");
+$clicked = $(this).attr('id');
+
+$('.js-service-box').hide();
+
+$('.js-service-box[data-slide="'+$clicked+'"]').show();
 
 });

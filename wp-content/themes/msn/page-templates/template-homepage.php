@@ -31,20 +31,41 @@
 			if ( $the_query->have_posts() ) {
 
 				echo '<div class="row">';
+
+				$i = 1;
 				
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
 
-						echo '<div class="col-12 col-sm-6 col-md-4 single-service hover-pointer js-service">';
+						echo '<div id="js-service-'.$i.'" class="col-12 col-sm-6 col-md-4 single-service hover-pointer js-service">';
 							echo '<div class="single-service--content">';
 								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
 							echo '<hr /></div>';
 
 						echo '</div>';
 
+						$i++;
+
 					} wp_reset_postdata();
 
 				echo '</div>';
+
+				$i = 1;
+				
+				while ( $the_query->have_posts() ) {
+					$the_query->the_post();
+
+					echo '<div class="service-box js-service-box" data-slide="js-service-'.$i.'" style="display:none;">';
+
+						echo '<div class="service-box--content">';
+								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
+						echo '<hr /></div>';
+
+					echo '</div>';
+
+					$i++;
+
+				} wp_reset_postdata();
 
 			}
 		?>
