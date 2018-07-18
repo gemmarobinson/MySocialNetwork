@@ -57,9 +57,13 @@
 
 					echo '<div class="service-box js-service-box" data-slide="js-service-'.$i.'" style="display:none;">';
 
+						?><img src="<?php echo get_template_directory_uri(); ?>/assets/images/close-icon.png" alt="Menu Close Icon" class="hover-pointer js-service-box-close" /><?php
+
 						echo '<div class="service-box--content">';
 								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
 						echo '<hr /></div>';
+
+						echo '<div class="js-service-next">Next</div>';
 
 					echo '</div>';
 

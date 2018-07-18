@@ -57,12 +57,30 @@ $(document).ready(function(){
 	Services Lightbox
 --------------------------------*/
 
+// On click of Service Grid
 $(".js-service").click(function(){
-  
-$clicked = $(this).attr('id');
+  	
+  	// Finds ID of Service Grid Click (they're all unique)
+	$clicked = $(this).attr('id');
 
-$('.js-service-box').hide();
+	// Finds corresponding Service Grid Box and shows it
+	$('.js-service-box[data-slide="'+$clicked+'"]').show();
 
-$('.js-service-box[data-slide="'+$clicked+'"]').show();
+});
 
+$(".js-service-next").click(function(){
+
+	$clicked = $(".js-service-box:visible").attr("data-slide");
+	$split = $clicked.split("-");
+	$number = $split[2];
+	$next =  parseInt($number) + 1;
+
+	$('.js-service-box').hide();
+	$('.js-service-box[data-slide="js-service-'+$next+'"]').show();
+	
+});
+
+// Close Service Box with Close Icon
+$('.js-service-box-close').click(function(){
+	$('.js-service-box').hide();
 });
