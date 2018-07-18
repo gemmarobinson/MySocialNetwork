@@ -126,7 +126,7 @@
 	.wpcf7-form {
 		padding-right: 26%;
 
-		@include media-breakpoint-down(sm) {
+		@include media-breakpoint-down(md) {
 			padding: 0;
 			margin-bottom: 30px;
 		}

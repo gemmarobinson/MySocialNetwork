@@ -99,10 +99,10 @@
 			<div class="col-12">
 				<h2 class="purple">Get in touch.</h2>
 			</div>
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-lg-6">
 				<?php echo do_shortcode( '[contact-form-7 id="31" title="Get in touch."]' ); ?>
 			</div>
-			<div class="col-12 col-md-6 contact-information">
+			<div class="col-12 col-lg-6 contact-information">
 				<div class="double-padding">
 					<img class="d-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/email-icon.png" alt="Email Icon" />
 					<p class="d-inline-block">
