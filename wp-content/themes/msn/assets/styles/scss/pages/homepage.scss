@@ -65,6 +65,10 @@
 		}
 	}
 
+	&--text {
+		
+	}
+
 	&:nth-child(1) { background-color: $pink; 	}
  	&:nth-child(2) { background-color: $purple; }
  	&:nth-child(3) { background-color: $mint; 	}

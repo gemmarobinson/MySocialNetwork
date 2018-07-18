@@ -35,15 +35,17 @@
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
 
-						echo '<div class="col-12 col-sm-6 col-md-4 single-service">';
+						echo '<div class="col-12 col-sm-6 col-md-4 single-service hover-pointer js-service">';
 							echo '<div class="single-service--content">';
 								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
 							echo '<hr /></div>';
+
 						echo '</div>';
 
 					} wp_reset_postdata();
 
 				echo '</div>';
+
 			}
 		?>
 

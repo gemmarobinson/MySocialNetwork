@@ -50,3 +50,15 @@ $(document).ready(function(){
 		} 
 	});
 });
+
+
+
+/*------------------------------- 
+	Services Lightbox
+--------------------------------*/
+
+$(".js-service").click(function(){
+  
+$(this).addClass("active");
+
+});
