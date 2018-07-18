@@ -26,10 +26,10 @@
 				<div class="row">
 					<div class="col-12">
 						<ul class="list-unstyled text-center menu">
-							<li>Who we are</li>
-							<li>What we do</li>
-							<li>Our clients</li>
-							<li>Contact us</li>
+							<li><a href="#intro">Who we are</a></li>
+							<li><a href="#services">What we do</a></li>
+							<li><a href="#clients">Our clients</a></li>
+							<li><a href="#contact">Contact us</a></li>
 						</ul>
 					</div>
 					<div class="col-12 text-center">
@@ -64,5 +64,7 @@
 				<hr />
 			</div>
 
-			<img class="scroll-down hover-pointer" src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Scrolling Arrow" />
+			<a href="#intro">
+				<img class="scroll-down hover-pointer" src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Scrolling Arrow" />
+			</a>
 		</section>

@@ -4,10 +4,18 @@
 				<div class="row">
 					<div class="col-12 col-md-9 col-lg-8 d-none d-md-block">
 						<ul class="list-unstyled">
-							<li class="d-inline-block">Who we are</li>
-							<li class="d-inline-block">What we do</li>
-							<li class="d-inline-block">Our clients</li>
-							<li class="d-inline-block">Contact us</li>
+							<li class="d-inline-block">
+								<a href="#intro">Who we are</a>
+							</li>
+							<li class="d-inline-block">
+								<a href="#services">What we do</a>
+							</li>
+							<li class="d-inline-block">
+								<a href="#clients">Our clients</a>
+							</li>
+							<li class="d-inline-block">
+								<a href="#contact">Contact us</a>
+							</li>
 						</ul>
 					</div>
 					<div class="col-12 col-md-3 col-lg-4 text-center text-md-right">

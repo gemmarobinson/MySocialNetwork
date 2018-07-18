@@ -3,7 +3,7 @@
 	get_header();
 ?>
 
-<section class="intro">
+<section class="intro" id="intro">
 	<div class="row">
 		<div class="col-12 col-md-6">
 			<h2><?php echo get_field('introduction_title'); ?></h2>
@@ -16,7 +16,7 @@
 	</div>
 </section>
 
-<section class="services">
+<section class="services" id="services">
 	<div class="container-fluid">
 
 		<?php
@@ -50,7 +50,7 @@
 	</div>
 </section>
 
-<section class="clients">
+<section class="clients" id="clients">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
@@ -84,7 +84,7 @@
 	</div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
 	<div class="container-fluid">
 		<div class="row">
 
