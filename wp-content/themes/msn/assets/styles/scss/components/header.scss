@@ -103,8 +103,16 @@
 			font-size: 40px;
 			font-weight: $Montserrat-Bold;
 			color: white;
-			transition: ease-in-out 0.5s;
+			transition: ease-in-out 0.2s;
 			cursor: pointer;
+
+			a { 
+				display: block;
+
+				&:hover {
+					text-decoration: none;
+				} 
+			}
 
 			@include media-breakpoint-down(md) {
 		    	font-size: 20px;
