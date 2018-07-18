@@ -33,7 +33,7 @@
 
 	gulp.task('scripts', function() {
 
-		return gulp.src('assets/js/src/custom/**/*.js')
+		return gulp.src('assets/js/src/**/*.js')
 			.pipe(concat('core.js'))
 			.pipe(gulp.dest('assets/js/'))
 			.pipe(rename('core.min.js'))
@@ -51,7 +51,7 @@
 	gulp.task('watch', function() {
 
 		gulp.watch('assets/styles/scss/**/*.scss', gulp.parallel('styles'));
-		gulp.watch('assets/js/src/custom/**/*.js', gulp.parallel('scripts')); 
+		gulp.watch('assets/js/src/**/*.js', gulp.parallel('scripts')); 
 
 	});
 

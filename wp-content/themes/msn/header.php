@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<div class="full-screen-menu">
+		<div class="full-screen-menu js-menu">
 			<div class="menu-header">
 				<div class="container-fluid">
 					<div class="row">
@@ -17,7 +17,7 @@
 							<p class="h4 uppercase blog-title"><?php echo get_bloginfo('name'); ?></p>
 						</div>
 						<div class="col-6 text-right">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close-icon.png" alt="Menu Close Icon" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close-icon.png" alt="Menu Close Icon" class="hover-pointer js-menu-close" />
 						</div>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 						<p class="h4 uppercase blog-title"><?php echo get_bloginfo('name'); ?></p>
 					</div>
 					<div class="col-6 text-right">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.png" alt="Menu Icon" />
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.png" alt="Menu Icon" class="hover-pointer js-menu-trigger" />
 					</div>
 				</div>
 			</header>
@@ -64,5 +64,5 @@
 				<hr />
 			</div>
 
-			<img class="scroll-down" src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Scrolling Arrow" />
+			<img class="scroll-down hover-pointer" src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Scrolling Arrow" />
 		</section>
