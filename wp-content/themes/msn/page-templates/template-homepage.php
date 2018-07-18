@@ -63,6 +63,7 @@
 								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
 						echo '<hr /></div>';
 
+						echo '<div class="js-service-prev">Prev</div>';
 						echo '<div class="js-service-next">Next</div>';
 
 					echo '</div>';

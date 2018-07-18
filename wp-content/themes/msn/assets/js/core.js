@@ -68,17 +68,47 @@ $(".js-service").click(function(){
 
 });
 
+
+
+// Next Service Slide
 $(".js-service-next").click(function(){
 
+	// Reassigns the variable with the data slide that is visible's value
 	$clicked = $(".js-service-box:visible").attr("data-slide");
+	// Splits the value to get the number
 	$split = $clicked.split("-");
 	$number = $split[2];
+
+	// Gets the next number
 	$next =  parseInt($number) + 1;
 
+	// hide all and then show the next service
 	$('.js-service-box').hide();
 	$('.js-service-box[data-slide="js-service-'+$next+'"]').show();
 	
 });
+
+
+
+// Previous Service Slide
+$(".js-service-prev").click(function(){
+
+	// Reassigns the variable with the data slide that is visible's value
+	$clicked = $(".js-service-box:visible").attr("data-slide");
+	// Splits the value to get the number
+	$split = $clicked.split("-");
+	$number = $split[2];
+
+	// Gets the next number
+	$prev =  parseInt($number) - 1;
+
+	// hide all and then show the next service
+	$('.js-service-box').hide();
+	$('.js-service-box[data-slide="js-service-'+$prev+'"]').show();
+	
+});
+
+
 
 // Close Service Box with Close Icon
 $('.js-service-box-close').click(function(){
