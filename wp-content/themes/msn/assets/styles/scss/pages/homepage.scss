@@ -1,12 +1,24 @@
 .intro {
 	padding: 150px 12%;
 
+	@include media-breakpoint-down(sm) {
+		padding: 30px 15px;
+	}
+
 	h2 {
-		padding:40px 0 90px 0;
+		padding: 40px 0 90px 0;
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 0 20px 0;
+		}
 	}
 
 	p {
 		max-width: 340px;
+
+		@include media-breakpoint-down(sm) {
+			max-width: 100%;
+		}
 	}
 
 	img {
@@ -18,6 +30,15 @@
 .single-service {
 	height: 300px;
 	postion: relative;
+	transition: ease-in-out 0.5s;
+
+	@include media-breakpoint-down(sm) {
+		height: auto;
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
 
 	&--content {
 		max-width: 180px;
@@ -26,6 +47,12 @@
 	    left: 0;
 	    right: 0;
 	    margin: 0 auto;
+
+	    @include media-breakpoint-down(sm) {
+	    	position: relative;
+	    	bottom: 0;
+	    	padding: 60px 0;
+	    }
 
 		p { 
 			color: white;
@@ -44,12 +71,22 @@
  	&:nth-child(4) { background-color: $mint; 	}
  	&:nth-child(5) { background-color: $pink; 	}
  	&:nth-child(6) { background-color: $purple; }
+
+ 	@include media-breakpoint-down(sm) {
+ 		&:nth-child(4) { background-color: $pink; 	}
+	 	&:nth-child(5) { background-color: $purple; 	}
+	 	&:nth-child(6) { background-color: $mint; }
+ 	}
 }
 
 
 
 .clients {
 	padding: 150px 12%;
+
+	@include media-breakpoint-down(sm) {
+		padding: 30px 15px;
+	}
 
 	.single-clients {
 		padding: 50px 0;
@@ -75,6 +112,11 @@
 	background-position: 100% 90%;
 	background-repeat: no-repeat;
 
+	@include media-breakpoint-down(sm) {
+		padding: 30px 15px;
+		background-image: none;
+	}
+
 
 	p {
 		color: white;
@@ -83,6 +125,11 @@
 
 	.wpcf7-form {
 		padding-right: 26%;
+
+		@include media-breakpoint-down(sm) {
+			padding: 0;
+			margin-bottom: 30px;
+		}
 
 		.d-inline-block {
 			vertical-align: middle;
@@ -136,6 +183,11 @@
 			color: white;
 			text-align: center;
 			padding: 10px 0;
+			transition: ease-in-out 0.5s;
+
+			&:hover {
+				opacity: 0.6;
+			}
 
 		}
 	}

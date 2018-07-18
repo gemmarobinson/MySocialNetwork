@@ -13,7 +13,7 @@
 			<header>
 				<div class="row">
 					<div class="col-6">
-						<p class="h4 uppercase">My Social</br>Network.</p>
+						<p class="h4 uppercase blog-title"><?php echo get_bloginfo('name'); ?></p>
 					</div>
 					<div class="col-6 text-right">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.png" alt="Menu Icon" />
@@ -22,9 +22,12 @@
 			</header>
 
 			<div class="top-banner--content">
-				<h1 class="h2 text-center">We are more</br>than strategists.</h1>
+				<h1 class="h2 text-center blog-description"><?php echo get_bloginfo('description'); ?></h1>
 				<hr />
 			</div>
 
 			<img class="scroll-down" src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Scrolling Arrow" />
 		</section>
+
+		<div class="full-screen-menu">
+		</div>

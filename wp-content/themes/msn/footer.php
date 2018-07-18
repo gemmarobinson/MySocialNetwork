@@ -11,15 +11,23 @@
 						</ul>
 					</div>
 					<div class="col-12 col-md-3 col-lg-4 text-center text-md-right">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook-icon.png" alt="Facebook Icon" target="_blank" class="social-icon" />
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter-icon.png" alt="Twitter Icon" target="_blank" class="social-icon" />
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-icon.png" alt="Instagram Icon" target="_blank" class="social-icon" />
+						<a href="https://www.facebook.com" target="_blank" class="no-underline">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook-icon.png" alt="Facebook Icon" target="_blank" class="social-icon" />
+						</a>
+						<a href="https://www.twitter.com" target="_blank" class="no-underline">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter-icon.png" alt="Twitter Icon" target="_blank" class="social-icon" />
+						</a>
+						<a href="https://www.instagram.com" target="_blank" class="no-underline">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-icon.png" alt="Instagram Icon" target="_blank" class="social-icon" />
+						</a>
 					</div>
 					<div class="col-12 copyright-info">
 						<ul class="list-unstyled text-center margin-top-double">
-							<li class="d-inline-block">My Social Network Limited.</li>
-							<li class="d-inline-block">Company Reg No 00000000</li>
-							<li class="d-inline-block">Designed by Sixth Story</li>
+							<li class="d-inline-block"><?php echo get_field('company_name'); ?></li>
+							<li class="d-inline-block"><?php echo get_field('company_reg_number'); ?></li>
+							<li class="d-inline-block">
+								<a href="https://sixthstory.co.uk/" target="_blank">Designed by Sixth Story</a>
+							</li>
 						</ul>
 					</div>
 				</div>

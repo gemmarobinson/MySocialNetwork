@@ -40,6 +40,11 @@
 	h3, .h3 { font-size: $h3-font-size; }
 	h4, .h4 { font-size: $h4-font-size; }
 
+	@include media-breakpoint-down(sm) {
+		h1, .h1 { font-size: 40px; }
+		h2, .h2 { font-size: 40px; }
+	}
+
 
 
 	// Paragraph
@@ -56,6 +61,14 @@
 		&.regular 	{ font-weight: $Montserrat-Regular; }
 
 		&--small { font-size: $small-paragraph-size; }
+	}
+
+	a { 
+		color: inherit;
+
+		&:hover {
+			color: inherit;
+		} 
 	}
 
 

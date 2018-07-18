@@ -38,6 +38,19 @@
 		}
 		add_filter('upload_mimes', 'cc_mime_types');
 
+		# Disable Posts as these are not used on this project
+		function remove_posts_menu() {
+		    remove_menu_page('edit.php');
+		}
+		add_action('admin_menu', 'remove_posts_menu');
+
+		# Remove span wrapper elements from Contact Form 7
+		add_filter('wpcf7_form_elements', function($content) {
+
+	    	$content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+	    	return $content;
+		});
+
 
 
 	/*-----------------------------------------------------------------------------
@@ -79,15 +92,6 @@
 			
 		}
 		add_action( 'init', 'disable_wp_bloat' );
-
-
-		# Remove span wrapper elements from Contact Form 7
-		add_filter('wpcf7_form_elements', function($content) {
-
-	    	$content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
-	    	return $content;
-		});
-
 
 
 

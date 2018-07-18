@@ -3,6 +3,10 @@ footer {
 	background-image: url('../../images/footer-background.png');
 	position: relative;
 
+	@include media-breakpoint-down(sm) {
+		padding: 30px 15px;
+	}
+
 
 
 	.background-image {
@@ -10,6 +14,12 @@ footer {
 		position: absolute;
 		left: 8%;
 		top: 30%;
+
+		@include media-breakpoint-down(sm) {
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
 	}
 
 
@@ -29,6 +39,11 @@ footer {
 	.social-icon {
 		width: 30px;
 		margin-left: 10px;
+		transition: ease-in-out 0.2s;
+
+		&:hover {
+			opacity: 0.6;
+		}
 
 		@include media-breakpoint-down(md) {
 			margin: 0;
@@ -44,6 +59,10 @@ footer {
 			font-size: $small-paragraph-size;
 
 			&:last-child {
+				border: 0;
+			}
+
+			@include media-breakpoint-down(sm) {
 				border: 0;
 			}
 		}

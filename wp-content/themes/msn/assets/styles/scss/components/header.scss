@@ -2,8 +2,20 @@
 	padding: 45px 70px;
 	background-image: url('../../images/top-banner-bg.png');
 	height: 100vh;
+	min-height: 600px;
+
+	@include media-breakpoint-down(sm) {
+		padding: 30px 15px;
+		height: 500px;
+		min-height: 500px;
+	}
 
 	header {
+
+		.blog-title {
+			max-width: 140px;
+		}
+
 		img {
 			width: 40px;
 			padding-top: 7px;
@@ -17,8 +29,13 @@
 	    right: 0;
 	    left: 0;
 
-		h1 {
+		.blog-description {
 			margin: 0 auto;
+			max-width: 550px;
+
+			@include media-breakpoint-down(sm) {
+				max-width: 90%;
+			}
 		}
 
 		hr {
@@ -38,4 +55,10 @@
 	right: 0;
 	margin: 0 auto;
 	width: 30px;
+}
+
+
+
+.full-screen-menu {
+
 }

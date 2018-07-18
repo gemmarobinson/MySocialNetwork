@@ -5,12 +5,12 @@
 
 <section class="intro">
 	<div class="row">
-		<div class="col-6">
-			<h2>Who we are.</h2>
-			<p>We are one of the UK’s leading Facebook Management Agencies with various in-house departments that specialise in social media campaigns, design and outreach marketing with over 10 years experience in the industry.</p>
+		<div class="col-12 col-md-6">
+			<h2><?php echo get_field('introduction_title'); ?></h2>
+			<p><?php echo get_field('introduction'); ?></p>
 		</div>
 
-		<div class="col-6 text-right">
+		<div class="col-12 col-md-6 text-center text-md-right">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/intro-image.png" alt="Intro Image" />
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
 
-						echo '<div class="col-4 single-service">';
+						echo '<div class="col-12 col-sm-6 col-md-4 single-service">';
 							echo '<div class="single-service--content">';
 								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
 							echo '<hr /></div>';
@@ -71,7 +71,7 @@
 
 					if (get_the_post_thumbnail_url()) {
 
-						echo '<div class="col-3 single-clients">';
+						echo '<div class="col-6 col-sm-3 single-clients">';
 							echo '<img src="'.get_the_post_thumbnail_url().'" alt="'.get_the_title().'" />';
 						echo '</div>';
 
@@ -87,6 +87,15 @@
 <section class="contact">
 	<div class="container-fluid">
 		<div class="row">
+
+			<?php
+				$email = get_field('email');
+				$tel = get_field('telephone');
+				$tel_link = str_replace(" ", "", $tel);
+				$get_address = get_field('address');
+				$address = str_replace(",", "</br>", $get_address);
+			?>
+
 			<div class="col-12">
 				<h2 class="purple">Get in touch.</h2>
 			</div>
@@ -96,15 +105,19 @@
 			<div class="col-12 col-md-6 contact-information">
 				<div class="double-padding">
 					<img class="d-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/email-icon.png" alt="Email Icon" />
-					<p class="d-inline-block">loremipsum@mysocialnetwork.com</p>
+					<p class="d-inline-block">
+						<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+					</p>
 				</div>
 				<div class="double-padding">
 					<img class="d-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/telephone-icon.png" alt="Telephone Icon" />
-					<p class="d-inline-block">0121 000 0000</p>
+					<p class="d-inline-block">
+						<a href="tel:<?php echo $tel_link; ?>"><?php echo $tel; ?></a>
+					</p>
 				</div>
 				<div class="double-padding">
 					<img class="d-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/map-icon.png" alt="Map Icon" />
-					<p class="d-inline-block">Lorem ipsum</br>1 Lorem ipsum</br>B1 3JR</p>
+					<p class="d-inline-block"><?php echo $address; ?></p>
 				</div>
 			</div>
 		</div>
