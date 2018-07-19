@@ -11,7 +11,7 @@
 		</div>
 
 		<div class="col-12 col-md-6 text-center text-md-right">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/intro-image.png" alt="Intro Image" />
+			<img src="<?php echo get_field('introduction_image'); ?>" alt="Intro Image" />
 		</div>
 	</div>
 </section>

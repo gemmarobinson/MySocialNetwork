@@ -47,7 +47,7 @@
 			</div>
 		</div>
 
-		<section class="top-banner background-block">
+		<section class="top-banner background-block" style="background: url('<?php echo get_field('header_background'); ?>');">
 			<header>
 				<div class="row">
 					<div class="col-6">
