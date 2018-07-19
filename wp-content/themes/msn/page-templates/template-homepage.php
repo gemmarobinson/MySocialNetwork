@@ -55,16 +55,26 @@
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
 
-					echo '<div class="service-box js-service-box" data-slide="js-service-'.$i.'" style="display:none;">';
+					?>
 
-						?><img src="<?php echo get_template_directory_uri(); ?>/assets/images/close-icon.png" alt="Menu Close Icon" class="hover-pointer js-service-box-close" /><?php
+					<div class="service-box js-service-box" data-slide="js-service-<?php echo $i; ?>" style="display:none;">
 
-						echo '<div class="service-box--content">';
-								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
-						echo '<hr /></div>';
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close-icon.png" alt="Menu Close Icon" class="hover-pointer service-close js-service-box-close" />
 
-						echo '<div class="js-service-prev">Prev</div>';
-						echo '<div class="js-service-next">Next</div>';
+						<div class="service-box--content">
+							<p class="h3">Facebook</br><?php echo get_the_title(); ?></p>
+							<p><?php echo get_the_content(); ?></p>
+							<hr />
+						</div>
+
+						<div class="service-prev js-service-prev">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Previous Service" />
+						</div>
+						<div class="service-next js-service-next">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Next Service" />
+						</div>
+
+						<?php
 
 					echo '</div>';
 
