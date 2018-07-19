@@ -68,10 +68,10 @@
 						</div>
 
 						<div class="service-prev js-service-prev">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Previous Service" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/service-prev.png" alt="Previous Service" />
 						</div>
 						<div class="service-next js-service-next">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arrow.png" alt="Next Service" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/service-next.png" alt="Next Service" />
 						</div>
 
 						<?php
