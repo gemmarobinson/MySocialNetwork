@@ -40,6 +40,7 @@
 						echo '<div id="js-service-'.$i.'" class="col-12 col-sm-6 col-md-4 single-service hover-pointer js-service">';
 							echo '<div class="single-service--content">';
 								echo '<p class="h3">Facebook</br>' . get_the_title() . '</p>';
+								echo '<p class="d-block d-md-none">' . get_the_content() . '</p>';
 							echo '<hr /></div>';
 
 						echo '</div>';
